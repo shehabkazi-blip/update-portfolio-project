@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Md Shehab Kazi, DevOps and Cloud Engineer.">
+    <title>Md Shehab Kazi | DevOps &amp; Cloud Engineer</title>
+    <style>
+        :root { --ink: #182235; --muted: #526176; --accent: #4057b8; --line: #d9e0ea; --soft: #f5f7fb; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: #e9edf4; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.55; }
+        .resume { width: min(100% - 32px, 900px); margin: 28px auto; padding: 42px 52px; background: #fff; box-shadow: 0 12px 36px rgba(24, 34, 53, .12); }
+        header { border-bottom: 2px solid var(--ink); padding-bottom: 20px; }
+        .header-content { display: flex; align-items: center; gap: 20px; }
+        .profile-frame { width: 132px; height: 132px; flex: 0 0 132px; display: grid; place-items: center; border: 5px solid #fff; border-radius: 50%; background: #fff; box-shadow: 0 0 0 1px var(--line), 0 5px 14px rgba(24, 34, 53, .14); overflow: hidden; }
+        .profile-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+        h1 { margin: 0; font-size: 34px; letter-spacing: .3px; }
+        .role { margin: 4px 0 14px; color: var(--accent); font-size: 17px; font-weight: 700; }
+        .contact { color: var(--muted); font-size: 12px; line-height: 1.8; }
+        a { color: inherit; text-decoration: none; }
+        .contact a { color: var(--accent); }
+        section { margin-top: 25px; }
+        h2 { margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid var(--line); color: var(--accent); font-size: 14px; letter-spacing: 1.3px; text-transform: uppercase; }
+        h3 { margin: 0; font-size: 15px; }
+        .summary { margin: 0; color: var(--muted); }
+        .keywords { margin: 0; padding: 11px 13px; background: var(--soft); color: var(--ink); font-size: 12px; }
+        .keywords strong { color: var(--accent); }
+        .skills-list { margin: 0; padding: 10px 14px 10px 30px; background: var(--soft); color: var(--muted); font-size: 12px; }
+        .skills-list li { margin: 3px 0; padding-left: 3px; }
+        .job, .case { margin-bottom: 18px; }
+        .job:last-child, .case:last-child { margin-bottom: 0; }
+        .job-head, .case-head { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+        .company, .date { color: var(--muted); font-size: 13px; }
+        .date { white-space: nowrap; }
+        ul { margin: 5px 0 0 18px; padding: 0; color: var(--muted); }
+        li { margin: 4px 0; }
+        .case p { margin: 5px 0 0; color: var(--muted); }
+        .case-detail { display: block; margin-top: 4px; }
+        .case strong { color: var(--ink); }
+        .project-grid { display: block; margin: 0; padding-left: 22px; }
+        .project-grid .case { margin-bottom: 12px; padding-left: 4px; }
+        .project-grid .case::marker { color: var(--accent); }
+        .projects-section { break-before: auto; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+        .compact { margin: 0; padding-left: 18px; }
+        .education-entry { margin-bottom: 10px; color: var(--muted); }
+        .education-entry:last-child { margin-bottom: 0; }
+        .education-entry strong { display: block; color: var(--ink); }
+        footer { margin-top: 24px; padding-top: 10px; border-top: 1px solid var(--line); color: #7b8799; font-size: 10px; text-align: center; }
+        @media (max-width: 650px) {
+            body { background: #fff; }
+            .resume { width: 100%; margin: 0; padding: 28px 22px; box-shadow: none; }
+            .header-content { align-items: flex-start; }
+            .profile-frame { width: 104px; height: 104px; flex-basis: 104px; }
+            .job-head, .case-head { display: block; }
+            .date { display: block; margin-top: 2px; }
+            .two-col { grid-template-columns: 1fr; gap: 16px; }
+        }
+        @media print {
+            body { background: #fff; font-size: 10.8px; line-height: 1.44; }
+            .resume { width: 100%; margin: 0; padding: 16px 24px; box-shadow: none; }
+            header { padding-bottom: 14px; }
+            .profile-frame { width: 116px; height: 116px; flex-basis: 116px; }
+            .role { margin-bottom: 10px; }
+            .contact { line-height: 1.6; }
+            section { margin-top: 12px; }
+            h2 { margin-bottom: 7px; padding-bottom: 3px; }
+            .job, .case { margin-bottom: 9px; }
+            li { margin: 2px 0; }
+            .case-detail { margin-top: 2px; }
+            .project-grid .case { margin-bottom: 5px; }
+            .project-grid h3 { font-size: 13.5px; }
+            .project-grid p { margin-top: 2px; font-size: 10.3px; line-height: 1.3; }
+            footer { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <main class="resume">
+        <header>
+            <div class="header-content">
+                <div class="profile-frame"><img src="cv.jpeg" alt="Md Shehab Kazi professional profile photo"></div>
+                <div>
+                    <h1>MD SHEHAB KAZI</h1>
+                    <p class="role">DevOps &amp; Cloud Engineer | Open to Relocation</p>
+                    <div class="contact">
+                        Dhaka, Bangladesh | Open to relocation | +880 1752 957060 | <a href="mailto:shehabkazi@gmail.com">shehabkazi@gmail.com</a><br>
+                        <a href="https://www.linkedin.com/in/shehab-engineer/" target="_blank" rel="noopener noreferrer">linkedin.com/in/shehab-engineer</a> |
+                        <a href="https://github.com/shehabkazi-blip" target="_blank" rel="noopener noreferrer">github.com/shehabkazi-blip</a> |
+                        <a href="https://md-shehab-kazi.netlify.app/" target="_blank" rel="noopener noreferrer">md-shehab-kazi.netlify.app</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">Technology and Infrastructure professional with 10 years of experience across Linux systems, web platforms, server operations, automation, and technical support, including 3 years of hands-on DevOps and Cloud Engineering experience. Builds secure, observable, and repeatable platforms with AWS, Kubernetes, Terraform, Ansible, Docker, and CI/CD. Strong in infrastructure reliability, deployment automation, incident response, and operational improvement. Open to international DevOps, Cloud, Platform Engineering, and Site Reliability Engineering opportunities.</p>
+        </section>
+
+        <section>
+            <h2>Core Competencies</h2>
+            <ul class="skills-list">
+                <li><strong>Cloud:</strong> AWS, Amazon EKS, EC2, Lambda, API Gateway, Route 53</li>
+                <li><strong>Infrastructure as Code &amp; Automation:</strong> Terraform, Ansible, Packer, GitHub Actions, Bash, Python</li>
+                <li><strong>Containers:</strong> Docker, Docker Compose, Kubernetes</li>
+                <li><strong>Operations:</strong> Linux / Ubuntu, monitoring, observability, incident response, security hardening, reliability engineering, cloud cost optimization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <article class="job">
+                <div class="job-head"><h3>DevOps &amp; Cloud Engineer <span class="company">| ZNGBD | Dhaka / Remote</span></h3><span class="date">Jan 2024 - Present</span></div>
+                <ul>
+                    <li>Design, operate, and scale Amazon EKS clusters and supporting AWS infrastructure for highly available application workloads.</li>
+                    <li>Automate infrastructure provisioning and configuration with Terraform and Ansible, reducing manual setup time by up to 70%.</li>
+                    <li>Build GitHub Actions CI/CD pipelines with automated validation, repeatable deployments, and rapid rollback paths.</li>
+                    <li>Develop Bash and Python automation for operational tasks, backups, health checks, and system monitoring.</li>
+                    <li>Apply AWS security best practices across IAM, VPCs, security groups, secrets, and least-privilege access.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <div class="job-head"><h3>System Administrator &amp; Infrastructure Lead <span class="company">| MSK Systems</span></h3><span class="date">Jan 2019 - Dec 2023</span></div>
+                <ul>
+                    <li>Managed international Linux server infrastructure and hosting environments for reliable local cloud solutions in Bangladesh.</li>
+                    <li>Improved server availability, performance, security hardening, backups, and operational consistency across client environments.</li>
+                    <li>Diagnosed complex server, networking, and application issues as the primary technical support contact.</li>
+                    <li>Led initial server, network, and technical environment setup for client web applications and hosting operations.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <div class="job-head"><h3>Digital Infrastructure &amp; Operations Manager <span class="company">| SAFA Doors and Furniture, Dhaka</span></h3><span class="date">Mar 2016 - Dec 2018</span></div>
+                <ul>
+                    <li>Built, customized, and maintained the company WordPress website with a focus on performance, responsiveness, and usability.</li>
+                    <li>Managed digital infrastructure, web architecture, SEO, technical optimization, and online workflows supporting retail operations.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="projects-section">
+            <h2>Selected Projects</h2>
+            <ul class="project-grid">
+                <li class="case"><div class="case-head"><h3>Multi-Region Kubernetes Infrastructure</h3></div><p><strong>Stack:</strong> AWS EKS, Terraform, Route 53, Docker, Linux | <a href="https://github.com/shehabkazi-blip/multi-region-Kubernetes-infrastructure" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
+                <li class="case"><div class="case-head"><h3>Serverless CI/CD Automation</h3></div><p><strong>Stack:</strong> GitHub Actions, AWS SAM, Lambda, API Gateway, EC2, Nginx | <a href="https://github.com/shehabkazi-blip/cloudmentor-serverless" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
+                <li class="case"><div class="case-head"><h3>Immutable Infrastructure &amp; Compliance Automation</h3></div><p><strong>Stack:</strong> Packer, Ansible, Terraform, AWS AMI, Auto Scaling, vulnerability scanning | <a href="https://github.com/shehabkazi-blip/immutable-infrastructure-aws" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
+                <li class="case"><div class="case-head"><h3>DevOps Monitoring &amp; Observability Lab</h3></div><p><strong>Stack:</strong> Docker Compose, Prometheus, Grafana, Loki, cAdvisor, Node Exporter | <a href="https://github.com/shehabkazi-blip/devops-monitoring-lab" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Selected Case Studies &amp; Outcomes</h2>
+            <article class="case"><div class="case-head"><h3>01. Multi-Region High-Availability Kubernetes Infrastructure</h3></div><p><span class="case-detail"><strong>Challenge:</strong> Reduce single-region availability risk for a high-throughput application platform.</span><span class="case-detail"><strong>Execution:</strong> Built symmetrical EKS clusters across two AWS regions with modular Terraform, Route 53 health checks, and On-Demand plus Spot capacity.</span><span class="case-detail"><strong>Impact:</strong> Reduced infrastructure cost by 25%, reduced RTO to under 5 minutes, and cut unplanned downtime by 40%.</span></p></article>
+            <article class="case"><div class="case-head"><h3>02. Automated Serverless CI/CD Pipeline &amp; Hybrid Migration</h3></div><p><span class="case-detail"><strong>Challenge:</strong> Remove manual deployment errors and configuration inconsistencies from an existing release process.</span><span class="case-detail"><strong>Execution:</strong> Engineered GitHub Actions workflows for AWS SAM and Lambda services with React static hosting on EC2 Nginx.</span><span class="case-detail"><strong>Impact:</strong> Removed manual deployment downtime through automated quality gates, repeatable releases, and dynamic API configuration.</span></p></article>
+            <article class="case"><div class="case-head"><h3>03. Immutable Infrastructure &amp; Compliance Automation</h3></div><p><span class="case-detail"><strong>Challenge:</strong> Address configuration drift and production risk from in-place server patching.</span><span class="case-detail"><strong>Execution:</strong> Developed a golden AMI pipeline with Packer, Ansible, vulnerability scanning, and Auto Scaling launch templates.</span><span class="case-detail"><strong>Impact:</strong> Enforced security baselines and replaced risky live-server changes with predictable image-based releases.</span></p></article>
+            <article class="case"><div class="case-head"><h3>04. Incident Observability &amp; Centralized Monitoring Lab</h3></div><p><span class="case-detail"><strong>Challenge:</strong> Improve visibility across application, container, and host signals during incidents.</span><span class="case-detail"><strong>Execution:</strong> Built a reproducible Docker Compose monitoring stack with Prometheus, Grafana, Loki, cAdvisor, and Node Exporter.</span><span class="case-detail"><strong>Impact:</strong> Unified metrics, logs, dashboards, and resource signals to support faster incident triage and lower MTTR.</span></p></article>
+        </section>
+
+        <section>
+            <h2>Engineering Philosophy</h2>
+            <ul class="compact">
+                <li><strong>Reliability:</strong> Health checks, HA, fault isolation, recovery.</li>
+                <li><strong>Security:</strong> Least privilege, secrets, scanning, RBAC.</li>
+                <li><strong>Observability:</strong> Useful metrics, logs, dashboards, alerts.</li>
+                <li><strong>Safe Delivery:</strong> Quality gates, rollbacks, approvals.</li>
+                <li><strong>Cost:</strong> Right-sizing, lifecycle policies, autoscaling.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-entry"><strong>B.Sc. in Computer Science &amp; Engineering</strong>Daffodil International University | 2015</div>
+            <div class="education-entry"><strong>Diploma in Computer Technology</strong>Barisal Polytechnic Institute | 2009</div>
+        </section>
+
+    </main>
+</body>
+</html>
