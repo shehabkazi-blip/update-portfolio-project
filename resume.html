@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Md Shehab Kazi, DevOps and Cloud Engineer.">
-    <title>Md Shehab Kazi | DevOps &amp; Cloud Engineer</title>
+    <meta name="description" content="Resume of Md Shehab Kazi, Senior DevOps and Cloud Engineer.">
+    <title>Md Shehab Kazi | Senior DevOps &amp; Cloud Engineer</title>
     <style>
         :root { --ink: #182235; --muted: #526176; --accent: #4057b8; --line: #d9e0ea; --soft: #f5f7fb; }
         * { box-sizing: border-box; }
@@ -14,8 +14,8 @@
         .header-content { display: flex; align-items: center; gap: 20px; }
         .profile-frame { width: 132px; height: 132px; flex: 0 0 132px; display: grid; place-items: center; border: 5px solid #fff; border-radius: 50%; background: #fff; box-shadow: 0 0 0 1px var(--line), 0 5px 14px rgba(24, 34, 53, .14); overflow: hidden; }
         .profile-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-        h1 { margin: 0; font-size: 34px; letter-spacing: .3px; }
-        .role { margin: 4px 0 14px; color: var(--accent); font-size: 17px; font-weight: 700; }
+        h1 { margin: 0; font-size: 30px; letter-spacing: .3px; text-transform: uppercase; }
+        .role { margin: 4px 0 10px; color: var(--accent); font-size: 16px; font-weight: 700; }
         .contact { color: var(--muted); font-size: 12px; line-height: 1.8; }
         a { color: inherit; text-decoration: none; }
         .contact a { color: var(--accent); }
@@ -23,8 +23,6 @@
         h2 { margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid var(--line); color: var(--accent); font-size: 14px; letter-spacing: 1.3px; text-transform: uppercase; }
         h3 { margin: 0; font-size: 15px; }
         .summary { margin: 0; color: var(--muted); }
-        .keywords { margin: 0; padding: 11px 13px; background: var(--soft); color: var(--ink); font-size: 12px; }
-        .keywords strong { color: var(--accent); }
         .skills-list { margin: 0; padding: 10px 14px 10px 30px; background: var(--soft); color: var(--muted); font-size: 12px; }
         .skills-list li { margin: 3px 0; padding-left: 3px; }
         .job, .case { margin-bottom: 18px; }
@@ -40,12 +38,7 @@
         .project-grid { display: block; margin: 0; padding-left: 22px; }
         .project-grid .case { margin-bottom: 12px; padding-left: 4px; }
         .project-grid .case::marker { color: var(--accent); }
-        .projects-section { break-before: auto; }
-        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
         .compact { margin: 0; padding-left: 18px; }
-        .education-entry { margin-bottom: 10px; color: var(--muted); }
-        .education-entry:last-child { margin-bottom: 0; }
-        .education-entry strong { display: block; color: var(--ink); }
         footer { margin-top: 24px; padding-top: 10px; border-top: 1px solid var(--line); color: #7b8799; font-size: 10px; text-align: center; }
         @media (max-width: 650px) {
             body { background: #fff; }
@@ -54,23 +47,22 @@
             .profile-frame { width: 104px; height: 104px; flex-basis: 104px; }
             .job-head, .case-head { display: block; }
             .date { display: block; margin-top: 2px; }
-            .two-col { grid-template-columns: 1fr; gap: 16px; }
         }
         @media print {
-            body { background: #fff; font-size: 10.8px; line-height: 1.44; }
-            .resume { width: 100%; margin: 0; padding: 16px 24px; box-shadow: none; }
-            header { padding-bottom: 14px; }
-            .profile-frame { width: 116px; height: 116px; flex-basis: 116px; }
-            .role { margin-bottom: 10px; }
-            .contact { line-height: 1.6; }
-            section { margin-top: 12px; }
-            h2 { margin-bottom: 7px; padding-bottom: 3px; }
-            .job, .case { margin-bottom: 9px; }
-            li { margin: 2px 0; }
-            .case-detail { margin-top: 2px; }
-            .project-grid .case { margin-bottom: 5px; }
-            .project-grid h3 { font-size: 13.5px; }
-            .project-grid p { margin-top: 2px; font-size: 10.3px; line-height: 1.3; }
+            body { background: #fff; font-size: 10.5px; line-height: 1.4; }
+            .resume { width: 100%; margin: 0; padding: 12px 18px; box-shadow: none; }
+            header { padding-bottom: 10px; }
+            .profile-frame { width: 100px; height: 100px; flex-basis: 100px; }
+            .role { margin-bottom: 6px; }
+            .contact { line-height: 1.5; }
+            section { margin-top: 10px; }
+            h2 { margin-bottom: 5px; padding-bottom: 2px; }
+            .job, .case { margin-bottom: 7px; }
+            li { margin: 1.5px 0; }
+            .case-detail { margin-top: 1px; }
+            .project-grid .case { margin-bottom: 4px; }
+            .project-grid h3 { font-size: 13px; }
+            .project-grid p { margin-top: 2px; font-size: 10px; line-height: 1.25; }
             footer { display: none; }
         }
     </style>
@@ -82,146 +74,156 @@
                 <div class="profile-frame"><img src="cv.jpeg" alt="Md Shehab Kazi professional profile photo"></div>
                 <div>
                     <h1>MD SHEHAB KAZI</h1>
-                    <p class="role">DevOps &amp; Cloud Engineer | Open to Relocation</p>
+                    <div class="role">DevOps &amp; Cloud Engineer | Kubernetes, AWS &amp; Infrastructure Automation</div>
                     <div class="contact">
-                        Dhaka, Bangladesh | Open to relocation | +880 1752 957060 | <a href="mailto:shehabkazi@gmail.com">shehabkazi@gmail.com</a><br>
-                        <a href="https://www.linkedin.com/in/shehab-engineer/" target="_blank" rel="noopener noreferrer">linkedin.com/in/shehab-engineer</a> |
-                        <a href="https://github.com/shehabkazi-blip" target="_blank" rel="noopener noreferrer">github.com/shehabkazi-blip</a> |
-                        <a href="https://md-shehab-kazi.netlify.app/" target="_blank" rel="noopener noreferrer">md-shehab-kazi.netlify.app</a>
+                        Dhaka, Bangladesh | Global Remote | +880 1752 957060 | <a href="mailto:shehabkazi@gmail.com">shehabkazi@gmail.com</a><br>
+                        <a href="https://linkedin.com/in/shehab-engineer" target="_blank" rel="noopener noreferrer">linkedin.com/in/shehab-engineer</a> | <a href="https://github.com/shehabkazi-blip" target="_blank" rel="noopener noreferrer">github.com/shehabkazi-blip</a> | <a href="https://md-shehab-kazi.netlify.app" target="_blank" rel="noopener noreferrer">md-shehab-kazi.netlify.app</a>
                     </div>
                 </div>
             </div>
         </header>
 
-       <section>
-  <h2>Professional Summary</h2>
-  <p class="summary">Results-driven Senior DevOps & Cloud Engineer with over 10 years of total system infrastructure experience, including 3+ years of dedicated commercial DevOps/Platform engineering expertise. Proven track record running production infrastructure and scaling workloads for high-traffic environments, including live streaming and massive concurrent user platforms. Deeply proficient in AWS cloud ecosystems (EKS, Elastic Beanstalk, EC2, RDS, S3, VPC, IAM, Route53, CloudWatch, Systems Manager, WAF, SQS, SNS), container orchestration (Docker, Kubernetes, Helm, Ingress), and Infrastructure as Code using Terraform and CloudFormation. Expert in building automated CI/CD pipelines (Jenkins, GitHub Actions, AWS CodePipeline/CodeBuild), enforcing security baselines, and establishing centralized observability with Prometheus, Grafana, and CloudWatch.</p>
-</section>
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">Results-driven DevOps &amp; Cloud Engineer with 10+ years of experience in enterprise Linux administration, highly secure production infrastructure, and automated release pipelines. Proven track record in designing resilient, secure, and fully compliant systems using Docker, Kubernetes, Ansible configuration management, Terraform Infrastructure as Code, and advanced workflow automation (n8n, API Integrations). Expert in implementing robust CI/CD workflows (GitHub Actions, Jenkins), stringent security hardening, and centralized monitoring frameworks (Prometheus, Grafana) to ensure 24/7 high availability and strict regulatory compliance.</p>
+        </section>
 
-<section>
- <h2>Core Competencies & Technical Stack</h2>
-  <ul class="skills-list">
-    <li><strong>Cloud Platforms & Infrastructure:</strong> AWS (EKS, Elastic Beanstalk, EC2, RDS, S3, VPC, IAM, Route53, ELB, ECR, CloudWatch, CloudFront, Systems Manager, WAF, SQS, SNS), CDN & Cache Tuning, Multi-Region Environments, Load Balancing, DNS, Compute & Storage Optimization</li>
-    <li><strong>DevOps & Platform Engineering:</strong> Docker, Docker Compose, Kubernetes, Amazon EKS, Helm, Ingress, Autoscaling, Infrastructure as Code (Terraform, CloudFormation), Configuration Management (Ansible), Git Workflows</li>
-    <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, AWS CodePipeline / CodeBuild, Release Automation, Deployment Strategies (Rolling Updates, Blue-Green)</li>
-    <li><strong>Observability, SRE & Operations:</strong> Prometheus, Grafana, Loki, ELK Stack, CloudWatch, SRE Practices, Performance Optimization, Incident Response, On-Call Rotation, Postmortems, Disaster Recovery & High Availability</li>
-    <li><strong>Security & DevSecOps:</strong> IAM Least-Privilege, Secrets Management, WAF/DDoS Protection, Patch Management, Vulnerability Scanning (Trivy, SonarQube), Network Security Firewalls, Security Hardening, Secure SDLC</li>
-    <li><strong>Scripting & Web Stack:</strong> Python, Shell/Bash Scripting, Node.js, Nginx, PM2, Redis, Enterprise Linux (Ubuntu, Debian), Kernel Performance Tuning, FinOps Cloud Cost Optimization</li>
-    <li><strong>Databases & Storage:</strong> MySQL, PostgreSQL, MongoDB, MongoDB Atlas, Database Deployment, Replication & Management</li>
-  </ul>
-</section>
+        <!-- Core Competencies & Technical Stack -->
+        <section>
+            <h2>Core Competencies & Technical Stack</h2>
+            <ul class="skills-list">
+                <li><strong>Enterprise Infrastructure &amp; Banking Systems:</strong> High Availability, Disaster Recovery, Microservices, Regulated Financial Environment Operations</li>
+                <li><strong>Infrastructure as Code &amp; Configuration Management:</strong> Terraform, Ansible, Automated Provisioning &amp; Configuration Enforcement</li>
+                <li><strong>Containerization &amp; Orchestration:</strong> Docker, Docker Compose, Kubernetes, Amazon EKS, Helm, Cluster Lifecycle Management</li>
+                <li><strong>CI/CD, Release &amp; Workflow Automation:</strong> Jenkins, GitHub Actions, GitLab CI/CD, n8n Workflow Automation, REST APIs, Webhooks, Zero-Downtime Deployments</li>
+                <li><strong>Observability, Security &amp; Compliance:</strong> Prometheus, Grafana, ELK Stack, CloudWatch, DevSecOps, Vulnerability Scanning, Linux Security Hardening, Audit Compliance</li>
+                <li><strong>Languages &amp; Scripting:</strong> Python, JavaScript, Shell/Bash Scripting, Enterprise Linux (Ubuntu, RedHat/CentOS, Debian) Administration</li>
+            </ul>
+        </section>
 
+        <!-- Professional Experience -->
         <section>
             <h2>Professional Experience</h2>
             <article class="job">
-                <div class="job-head"><h3>DevOps &amp; Cloud Engineer <span class="company">| ZNGBD | Dhaka / Remote</span></h3><span class="date">Jan 2024 - Present</span></div>
+                <div class="job-head">
+                    <h3>DevOps &amp; Cloud Engineer <span class="company">| ZNGBD | Global Remote</span></h3>
+                    <span class="date">Jan 2024 - Present</span>
+                </div>
                 <ul>
-                <li>Designed, operated, and scaled Amazon EKS clusters and comprehensive AWS cloud environments (utilizing EC2, Elastic Beanstalk, VPC, IAM, Route53, S3, RDS, ELB, ECR, CloudWatch, and Systems Manager) for mission-critical client solutions.</li>
-                <li>Automated infrastructure provisioning and configuration management using Terraform and CloudFormation, reducing manual setup time by up to 70%.</li>
-                <li>Built robust Jenkins, GitHub Actions, and AWS CodePipeline/CodeBuild CI/CD pipelines with automated validation, vulnerability scanning (Trivy, SonarQube), and zero-downtime rollback paths.</li>
-                <li>Prepared infrastructure for high-traffic surges and live events through advanced autoscaling policies, load testing methodologies, and CDN/cache tuning.</li>
-                <li>Took active part in on-call rotations, incident response, postmortems, and operational automation using Python and Bash scripting.</li>
-                <li>Enforced strict security baselines, IAM least-privilege policies, secrets management, WAF/DDoS protection, and container compliance standards across all cloud deployments.</li>
-                <li>Optimized cloud and CDN costs using FinOps practices, alongside performance tuning via Nginx, PM2, and Redis on Linux/Ubuntu production environments.</li>
-                <li>Managed production databases (MySQL, PostgreSQL, MongoDB, MongoDB Atlas), ensuring automated backups, high availability, and secure cross-cloud deployments.</li>
-                <li>Implemented centralized observability—metrics, logs, alerts, and dashboards—using Prometheus, Grafana, Loki, and CloudWatch to minimize MTTR and accelerate incident triage.</li>
+                    <li>Designed, implemented, and managed scalable, secure, and reliable enterprise cloud and hybrid infrastructure meeting strict compliance and uptime standards.</li>
+                    <li>Automated infrastructure provisioning, configuration management, and system updates using Terraform and Ansible to eliminate manual errors and drift.</li>
+                    <li>Engineered complex cross-platform workflow automations and API integrations (including n8n and webhook-driven pipelines) to streamline digital operations and marketing pipelines.</li>
+                    <li>Managed containerized application environments using Docker, Kubernetes, and orchestration tools, ensuring high availability and secure patch deployments.</li>
+                    <li>Built and maintained robust CI/CD pipelines using Jenkins, GitHub Actions, and GitLab CI/CD with automated quality gates, security scans, and secure deployment strategies.</li>
+                    <li>Established comprehensive system monitoring, logging, and alerting solutions using Prometheus, Grafana, and ELK stack to optimize incident response and reliability.</li>
+                    <li>Administered enterprise Linux environments, troubleshooting complex networking, performance bottlenecks, and enforcing rigorous security baselines and regulatory frameworks.</li>
                 </ul>
             </article>
-            </article>
+
             <article class="job">
-                <div class="job-head"><h3>System Administrator &amp; Infrastructure Lead <span class="company">| MSK Systems</span></h3><span class="date">Jan 2019 - Dec 2023</span></div>
+                <div class="job-head">
+                    <h3>System Administrator &amp; Software Operations Lead <span class="company">| MSK Systems</span></h3>
+                    <span class="date">Jan 2019 - Dec 2023</span>
+                </div>
                 <ul>
-                <li>Managed enterprise Linux administration (Ubuntu/Debian) and production troubleshooting, KVM hypervisors, and Git repositories, optimizing compute resource utilization and server uptime.</li>
-                <li>Enhanced server performance, security hardening, automated backup routines, and disaster recovery readiness across distributed environments.</li>
-                <li>Configured complex networking including TCP/IP, DNS, load balancing, VPN, performance tuning, firewall rules, and network bridging.</li>
-                <li>Led incident response, on-call support, and root-cause analysis (RCA) for critical infrastructure bottlenecks, network anomalies, and hosting platforms.</li>
+                    <li>Led enterprise Linux server administration, infrastructure security hardening, and production reliability for mission-critical core platforms.</li>
+                    <li>Optimized resource allocation, network routing, firewall rules, database replication, and automated backup routines across virtualized infrastructure.</li>
+                    <li>Resolved complex infrastructure bottlenecks, networking anomalies, and performance throttling to maintain strict SLA and uptime requirements in production.</li>
+                    <li>Collaborated directly with software development teams to streamline release workflows, tooling automation, and deployment stability.</li>
                 </ul>
             </article>
+
             <article class="job">
-                <div class="job-head"><h3>Digital Infrastructure &amp; Operations Manager <span class="company">| SAFA Doors and Furniture, Dhaka Sales Center</span></h3><span class="date">Mar 2016 - Dec 2018</span></div>
+                <div class="job-head">
+                    <h3>Digital Infrastructure &amp; Web Operations Manager <span class="company">| SAFA Doors and Furniture</span></h3>
+                    <span class="date">Mar 2016 - Dec 2018</span>
+                </div>
                 <ul>
-                <li>Maintained and optimized high-traffic web architecture, infrastructure reliability, and digital workflows to ensure maximum uptime for sales center operations.</li>
-                <li>Managed core web infrastructure, system performance tuning, search engine optimization, and secure Linux server environments.</li>
+                    <li>Maintained and optimized high-traffic platforms and core server infrastructure reliability to ensure continuous uptime and secure operations.</li>
+                    <li>Managed core system provisioning, performance tuning, and secure Linux hosting environments with tight access controls.</li>
                 </ul>
             </article>
         </section>
 
+        <!-- Selected Projects -->
         <section class="projects-section">
-            <h2>Selected Projects</h2>
+            <h2>Selected Projects &amp; Products</h2>
             <ul class="project-grid">
-                <li class="case"><div class="case-head"><h3>Multi-Region Kubernetes Infrastructure</h3></div><p><strong>Stack:</strong> AWS EKS, Terraform, Route 53, Docker, Linux | <a href="https://github.com/shehabkazi-blip/multi-region-Kubernetes-infrastructure" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
-                <li class="case"><div class="case-head"><h3>Serverless CI/CD Automation</h3></div><p><strong>Stack:</strong> GitHub Actions, AWS SAM, Lambda, API Gateway, EC2, Nginx | <a href="https://github.com/shehabkazi-blip/cloudmentor-serverless" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
-                <li class="case"><div class="case-head"><h3>Immutable Infrastructure &amp; Compliance Automation</h3></div><p><strong>Stack:</strong> Packer, Ansible, Terraform, AWS AMI, Auto Scaling, vulnerability scanning | <a href="https://github.com/shehabkazi-blip/immutable-infrastructure-aws" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
-                <li class="case"><div class="case-head"><h3>DevOps Monitoring &amp; Observability Lab</h3></div><p><strong>Stack:</strong> Docker Compose, Prometheus, Grafana, Loki, cAdvisor, Node Exporter | <a href="https://github.com/shehabkazi-blip/devops-monitoring-lab" target="_blank" rel="noopener noreferrer">Repository</a></p></li>
+                <li class="case">
+                    <div class="case-head"><h3>Multi-Region Kubernetes Infrastructure</h3></div>
+                    <p><strong>Stack:</strong> Kubernetes, Terraform, Route 53, Docker, Enterprise Linux | <a href="https://github.com/shehabkazi-blip/multi-region-Kubernetes-infrastructure" target="_blank" rel="noopener noreferrer">Repository</a></p>
+                </li>
+                <li class="case">
+                    <div class="case-head"><h3>Serverless &amp; Pipeline Automation</h3></div>
+                    <p><strong>Stack:</strong> GitHub Actions, Jenkins, Ansible, API Gateway, Nginx | <a href="https://github.com/shehabkazi-blip/cloudmentor-serverless" target="_blank" rel="noopener noreferrer">Repository</a></p>
+                </li>
+                <li class="case">
+                    <div class="case-head"><h3>Immutable Infrastructure &amp; Compliance Automation</h3></div>
+                    <p><strong>Stack:</strong> Packer, Ansible, Terraform, Automated Vulnerability Scanning | <a href="https://github.com/shehabkazi-blip/immutable-infrastructure-aws" target="_blank" rel="noopener noreferrer">Repository</a></p>
+                </li>
+                <li class="case">
+                    <div class="case-head"><h3>DevOps Monitoring &amp; Observability Lab</h3></div>
+                    <p><strong>Stack:</strong> Docker Compose, Prometheus, Grafana, Loki, Node Exporter | <a href="https://github.com/shehabkazi-blip/devops-monitoring-lab" target="_blank" rel="noopener noreferrer">Repository</a></p>
+                </li>
             </ul>
         </section>
 
+        <!-- Selected Case Studies & Outcomes -->
         <section>
-  <h2>Selected Case Studies &amp; Outcomes</h2>
-  
-  <article class="case">
-    <div class="case-head">
-      <h3>01. Multi-Region High-Availability Kubernetes Infrastructure</h3>
-    </div>
-    <p>
-      <span class="case-detail"><strong>Challenge:</strong> Reduce single-region availability risk for a high-throughput application platform.</span>
-      <span class="case-detail"><strong>Execution:</strong> Built symmetrical EKS clusters across two AWS regions with modular Terraform, Route 53 health checks, and On-Demand plus Spot capacity.</span>
-      <span class="case-detail"><strong>Impact:</strong> Reduced infrastructure cost by 25%, reduced RTO to under 5 minutes, and cut unplanned downtime by 40%.</span>
-    </p>
-  </article>
+            <h2>Selected Case Studies &amp; Outcomes</h2>
+            <article class="case">
+                <div class="case-head"><h3>01. Enterprise High-Availability &amp; Cluster Orchestration</h3></div>
+                <p>
+                    <span class="case-detail"><strong>Challenge:</strong> Mitigate single-point-of-failure risks and automate reliable scaling for enterprise workloads.</span><br>
+                    <span class="case-detail"><strong>Execution:</strong> Built resilient cluster infrastructure using Terraform and Kubernetes across environments with automated fault isolation.</span><br>
+                    <span class="case-detail"><strong>Impact:</strong> Reduced infrastructure overhead while guaranteeing high availability and robust system resilience.</span>
+                </p>
+            </article>
 
-  <article class="case">
-    <div class="case-head">
-      <h3>02. Automated Serverless CI/CD Pipeline &amp; Hybrid Migration</h3>
-    </div>
-    <p>
-      <span class="case-detail"><strong>Challenge:</strong> Remove manual deployment errors and configuration inconsistencies from an existing release process.</span>
-      <span class="case-detail"><strong>Execution:</strong> Engineered GitHub Actions workflows for AWS SAM and Lambda services with React static hosting on EC2 Nginx.</span>
-      <span class="case-detail"><strong>Impact:</strong> Removed manual deployment downtime through automated quality gates, repeatable releases, and dynamic API configuration.</span>
-    </p>
-  </article>
+            <article class="case">
+                <div class="case-head"><h3>02. Centralized Observability &amp; Security Auditing</h3></div>
+                <p>
+                    <span class="case-detail"><strong>Challenge:</strong> Surface operational anomalies and security drift well ahead of production impact.</span><br>
+                    <span class="case-detail"><strong>Execution:</strong> Deployed comprehensive monitoring stacks tracking resource saturation, audit logs, and system metrics.</span><br>
+                    <span class="case-detail"><strong>Impact:</strong> Minimized MTTR and provided actionable telemetry for proactive incident management.</span>
+                </p>
+            </article>
 
-  <article class="case">
-    <div class="case-head">
-      <h3>03. Immutable Infrastructure &amp; Compliance Automation</h3>
-    </div>
-    <p>
-      <span class="case-detail"><strong>Challenge:</strong> Address configuration drift and production risk from in-place server patching.</span>
-      <span class="case-detail"><strong>Execution:</strong> Developed a golden AMI pipeline with Packer, Ansible, vulnerability scanning, and Auto Scaling launch templates.</span>
-      <span class="case-detail"><strong>Impact:</strong> Enforced security baselines and replaced risky live-server changes with predictable image-based releases.</span>
-    </p>
-  </article>
+            <article class="case">
+                <div class="case-head"><h3>03. Automated CI/CD Pipelines &amp; Quality Gates</h3></div>
+                <p>
+                    <span class="case-detail"><strong>Challenge:</strong> Eliminate manual deployment errors and enforce standardized release workflows.</span><br>
+                    <span class="case-detail"><strong>Execution:</strong> Engineered Jenkins and GitHub Actions pipelines with automated syntax checks, testing, and zero-downtime deployment targets.</span><br>
+                    <span class="case-detail"><strong>Impact:</strong> Accelerated release cycles and achieved dependable, repeatable rolling deployments.</span>
+                </p>
+            </article>
 
-  <article class="case">
-    <div class="case-head">
-      <h3>04. Incident Observability &amp; Centralized Monitoring Lab</h3>
-    </div>
-    <p>
-      <span class="case-detail"><strong>Challenge:</strong> Improve visibility across application, container, and host signals during incidents.</span>
-      <span class="case-detail"><strong>Execution:</strong> Built a reproducible Docker Compose monitoring stack with Prometheus, Grafana, Loki, cAdvisor, and Node Exporter.</span>
-      <span class="case-detail"><strong>Impact:</strong> Unified metrics, logs, dashboards, and resource signals to support faster incident triage and lower MTTR.</span>
-    </p>
-  </article>
-</section>
+            <article class="case">
+                <div class="case-head"><h3>04. Immutable Infrastructure &amp; Compliance Hardening</h3></div>
+                <p>
+                    <span class="case-detail"><strong>Challenge:</strong> Eliminate configuration drift and security vulnerabilities from server patch cycles.</span><br>
+                    <span class="case-detail"><strong>Execution:</strong> Developed automated provisioning pipelines using Ansible, Terraform, and rigorous security hardening baselines.</span><br>
+                    <span class="case-detail"><strong>Impact:</strong> Enforced strict regulatory compliance and streamlined predictable patch management.</span>
+                </p>
+            </article>
+        </section>
 
+        <!-- Engineering Philosophy -->
         <section>
-           <section>
             <h2>Engineering Philosophy</h2>
             <ul class="compact">
-            <li><strong>Reliability & SRE:</strong> Health checks, High Availability (HA), fault isolation, automated failover, Disaster Recovery.</li>
-            <li><strong>DevSecOps & Security:</strong> Least privilege IAM, secrets management, vulnerability scanning, RBAC, network hardening.</li>
-            <li><strong>Observability:</strong> Actionable metrics, application logging, dynamic dashboards, distributed tracing, automated alerts.</li>
-            <li><strong>Safe Delivery:</strong> Quality gates, canary/rolling releases, automated rollbacks, deployment approvals.</li>
-            <li><strong>Cost & FinOps:</strong> Infrastructure right-sizing, cloud lifecycle policies, autoscaling, FinOps cost optimization.</li>
+                <li><strong>Compulsive Automation:</strong> Automating infrastructure provisioning, configuration management, and drift detection.</li>
+                <li><strong>Reliability & SRE:</strong> Proactive monitoring, fault isolation, automated failover, and rigorous incident triage.</li>
+                <li><strong>Safe Delivery:</strong> Zero-downtime upgrades, automated quality gates, and robust rollback strategies.</li>
+                <li><strong>Security & Compliance:</strong> Enforcing strict least-privilege access, security hardening, and regulatory standards.</li>
             </ul>
-            </section>
+        </section>
 
+        <!-- Education -->
         <section>
-        <h2>Education</h2>
-        <p style="margin: 0;">
-        <strong>B.Sc. in Computer Science & Engineering</strong> — Daffodil International University (2015) | 
-        <strong>Diploma in Computer Technology</strong> — Barisal Polytechnic Institute (2009)
-        </p>
+            <h2>Education</h2>
+            <p><strong>B.Sc. in Computer Science & Engineering</strong> — Daffodil International University (2015) | <strong>Diploma in Computer Technology</strong> — Barisal Polytechnic Institute (2009)</p>
         </section>
 
     </main>
